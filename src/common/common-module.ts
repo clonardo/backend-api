@@ -1,6 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ConfigService } from './config-service';
 
+/**
+ * Common module with shared utils for rest of the app
+ */
 @Module({
     providers: [
         {
@@ -11,4 +14,4 @@ import { ConfigService } from './config-service';
     ],
     exports: [ConfigService]
 })
-export class ConfigModule {}
+export class CommonModule {}
